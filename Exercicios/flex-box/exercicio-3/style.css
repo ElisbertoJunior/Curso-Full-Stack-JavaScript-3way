@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0, 400; 1, 900&display=swap');
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  font-family: monospace;
+  margin: 8px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  color: #663299;
+}
+
+a {
+  font-size: 22px;
+  text-decoration: none;
+  color: #663299;
+  padding: 7px;
+  margin: 0px;
+}
+
+ul {
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.icones {
+  display: flex;
+  gap: 10px;
+
+}
+
+
+.rect {
+  width: 150px;
+  height: 40px;
+  color: white;
+  background-color: #663299;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.circ {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #663299;
+}
+
+.barra {
+  background-color: #eeeeee;
+  width: auto;
+  height: 40px;
+  margin: 8px;
+}
