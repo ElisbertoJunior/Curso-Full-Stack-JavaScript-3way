@@ -1,0 +1,67 @@
+.step-1 {
+  
+}
+
+.texto-injetado {
+  margin-bottom: 25px;
+  text-align: center;
+  }
+
+  .caixa {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .caixa-amarela {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .caixa-vermelha {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .caixa-azul {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+  }
+
+
+  body {
+    max-width: 600px;
+    margin: 0 auto;
+    }
+    .one {
+    background: pink;
+    border: 3px solid blue;
+    /* ALTERE-ME */
+    padding: 0px;
+    margin: 0px;
+    }
+    .two {
+    background: lightblue;
+    border: 3px solid purple;
+    /* ALTERE-ME */
+    margin-bottom: 0px;
+    }
+    .three {
+    background: peachpuff;
+    border: 3px solid brown;
+    width: 200px;
+    /* ALTERE-ME */
+    padding: 0px;
+    margin-left: 0px;
+    }
+    
+  
+
+
+  
+
+  
+    
