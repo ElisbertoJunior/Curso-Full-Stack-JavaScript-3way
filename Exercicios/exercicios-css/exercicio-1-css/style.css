@@ -1,0 +1,23 @@
+.odd-element {
+  background-color: #e7aeb8;
+}
+
+.step-2 {
+  margin: 100px 0;
+  font-family: Verdana, DejaVu, sans-serif;
+}
+
+.text-blue {
+  font-size: 36px;
+  color: #2020ee;
+}
+
+#third-element {
+  font-size: 24px;
+} 
+
+#fourth-element {
+  background-color: lightgreen;
+  font-weight: bold;
+  font-family: 'Segoe UI';
+}
