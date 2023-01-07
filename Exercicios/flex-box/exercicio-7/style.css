@@ -25,10 +25,53 @@ body {
   
 }
 
+.main {
+  display: flex;
+  
+}
+
+.sidebar {
+ height: 85vh;
+ min-width: 250px;
+}
+
+.sidebar > ul {
+ padding: 30px;
+ list-style: none;
+ font-size: 20px;
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+ 
+}
+
+.sidebar > ul li a{ 
+  color: white;
+  text-decoration: none;
+ }
+
+ .sidebar > ul li a:hover{
+  font-weight: bold;
+ }
+
+.card_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+
+}
+
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
 }
 
 .sidebar {
@@ -40,4 +83,26 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
+
+  padding: 10px;
+  width: 400px;
+  height: 355px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1528px) {
+  .card_container {
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    place-items: center;
+  }
+
+  .sidebar {
+    height: 1300px;
+    min-width: 250px;
+   }
+  
+
 }
