@@ -78,6 +78,10 @@ body {
   font-size: 18px;
   font-weight: bold;
 }
+.main_information button:hover {
+  background-color: #74a3f0;
+  cursor: pointer;
+}
 
 .main_description, 
 .mainImg_content {
