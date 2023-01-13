@@ -19,13 +19,14 @@ body {
 .information, 
 .catchphrase,
 .call_action {
-  max-width: 90rem;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .main_content > header {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
  
 }
 
@@ -33,5 +34,59 @@ body {
   display: flex;
   gap: 20px;
   list-style-type: none;
+  font-weight: 100;
 }
 
+.main_content > header > ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.main_content > header > ul a:hover {
+  font-weight: bold;
+}
+
+.main_information {
+  display: flex;
+  gap: 30px;
+  padding: 70px 0 90px 0;
+ 
+}
+
+.main_information h2 {
+  font-size: 48px;
+  font-weight: 700;
+  
+}
+
+.main_information p {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.main_information button {
+  margin: 20px 0;
+  border-radius: 12px;
+  border: none;
+
+  width: 140px;
+  height: 50px;
+
+  background-color: #3882F6;
+  color: #FFFFFF;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main_description, 
+.mainImg_content {
+  width: 50%;
+}
+
+
+
+.mainImg_content img{
+  height: 260px;
+  width: 100%;
+}
