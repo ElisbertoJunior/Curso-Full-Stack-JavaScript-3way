@@ -1,5 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: Roboto;
+}
+
+
+.main_container, footer {
+  background-color: #1F2937;
+  color: #FFFFFF;
+}
+
+.main_content, 
+.information, 
+.catchphrase,
+.call_action {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.main_content > header {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.main_content > header > ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
