@@ -147,24 +147,24 @@ body {
 
 .catchphrase_content span {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 20px;                                                                   
   text-align: right;
 
   margin-right: 50px;
-}
+}                                           
 
 .call_action {
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .card_action {
   background-color: #3882F6;
   margin: 0 auto;
-  width: 90%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 120px 50px 120px;
+  padding: 50px 125px 50px 120px;
   border-radius: 12px;
 
   color: #FFFFFF;
@@ -192,3 +192,16 @@ body {
   height: 40px;
   /*margin-right: 50px;*/
 }
+
+.card_action button:hover {
+  background-color: #FFFFFF;
+  color: #3882F6;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 18px
+}
+
