@@ -163,14 +163,15 @@ body {
   width: 90%;
   display: flex;
   justify-content: space-between;
-  padding: 40px 80px;
+  align-items: center;
+  padding: 50px 120px 50px 120px;
   border-radius: 12px;
 
   color: #FFFFFF;
 }
 
 .card_action p{
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -181,8 +182,13 @@ body {
 .card_action button {
   background-color: transparent;
   border: 2px solid #FFFFFF;
+  border-radius: 10px;
   color: #FFFFFF;
 
   font-size: 16px;
   font-weight: bold;
+
+  width: 150px;
+  height: 40px;
+  /*margin-right: 50px;*/
 }
