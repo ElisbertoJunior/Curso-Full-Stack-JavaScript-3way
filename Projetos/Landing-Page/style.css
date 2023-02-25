@@ -18,7 +18,8 @@ body {
 
 .main_content, 
 .information, 
-.call_action {
+.call_action,
+.container {
   max-width: 1200px;
   margin: 0 auto;
 }

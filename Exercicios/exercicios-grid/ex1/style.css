@@ -1,0 +1,40 @@
+.container {
+  display: inline-grid; 
+  
+  grid-template: 100px 100px 100px 100px 100px / 100px 100px 100px 100px 100px;
+  background-color: aqua;
+  font-size: 50%;
+  text-align: center;
+}
+
+#living-room {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: blue;
+}
+
+#kitchen {
+  grid-column: 4 / 6;
+  grid-row: 3 / 6;
+  background-color: brown;
+}
+
+#bedroom {
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
+  background-color: blueviolet;
+}
+
+#bathroom {
+  grid-column: 1 / 2;
+  grid-row: 3 / 6;
+  background-color: chocolate;
+}
+
+#closet {
+  grid-column: 2 / 4;
+  grid-row: 5 / 6;
+  background-color: burlywood;
+}
