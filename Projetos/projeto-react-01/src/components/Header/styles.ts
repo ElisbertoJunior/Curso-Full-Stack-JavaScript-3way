@@ -13,6 +13,7 @@ export const Header = styled.header`
 
     img {
       height: 31px;
+      display: inline-block;
     }
 
     h1 {
