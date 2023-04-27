@@ -8,8 +8,9 @@ export const Header = styled.header`
 
   div {
     display: flex;
-    
-    gap: 5px;
+    align-items: center;
+
+    gap: 8px;
 
     img {
       height: 31px;
@@ -18,6 +19,8 @@ export const Header = styled.header`
 
     h1 {
       font-size: 22px;
+      color: #61DAFB;
+
     }
 
   }
