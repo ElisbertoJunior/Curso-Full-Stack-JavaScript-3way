@@ -16,4 +16,17 @@ export const Container = styled.div`
   padding: 0 30px;
   margin: 0 auto;
 `
+export const CardContainer = styled.div`
+  width: 120%;
+  display: flex; 
+  gap: 18px;
+  
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  
+`;
+
+
 export default GlobalStyles
