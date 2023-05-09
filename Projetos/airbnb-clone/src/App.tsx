@@ -4,14 +4,20 @@ import Hero from "./components/Hero";
 import GlobalStyles, { Container, CardContainer } from "./styles/global";
 import data from "./data";
 
-function App() {
+
+const App = () => {
+  
   const dataElement = data.map((element) => {
+   
     return (
-      <Card 
+      <Card
         cardImg={element.coverImg}
-        subtitle={element.stats.rating} 
-        text={element.title} 
-        textF={element.location} />
+        subtitle={element.stats.rating}
+        text={element.title}
+        textF={element.location} 
+        openSpots={element.openSpots} 
+        location={element.location}        
+      /> 
     );
   });
 
@@ -21,12 +27,10 @@ function App() {
       <Container>
         <Header />
         <Hero />
-          <CardContainer>
-            {dataElement}
-          </CardContainer>
+        <CardContainer>{dataElement}</CardContainer>
       </Container>
     </div>
   );
-}
+};
 
 export default App;
