@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-
 const Meme = () => {
   const [memeAllImage, setMemeAllImage] = useState([]);
 
@@ -11,13 +10,13 @@ const Meme = () => {
   });
 
   useEffect(() => {
-     const getMemes = async () => {
-        const res = await fetch('https://api.imgflip.com/get_memes')
-        const data = await res.json()
-        setMemeAllImage(data.data.memes)
-    }
-    getMemes()
-  }, [])
+    const getMemes = async () => {
+      const res = await fetch("https://api.imgflip.com/get_memes");
+      const data = await res.json();
+      setMemeAllImage(data.data.memes);
+    };
+    getMemes();
+  }, []);
 
   const getMemeImage = () => {
     const memesArray = memeAllImage;
