@@ -1,6 +1,6 @@
 const express = require("express");
 
-const router = express.router();
+const router = express.Router();
 
 //Carrega o book model (modelo de dados no MongoDB)
 
@@ -27,8 +27,30 @@ router.get("/:id", (req, res) => {
 //Adicionar livro / salvar livro
 router.post("/", (req, res) => {
   Book.create(req.body)
-    .then((book) => res.json({msg: 'Livro adicionado com sucesso'}))
+    .then((book) => res.json({ msg: "Livro adicionado com sucesso" }))
     .catch((err) =>
-      res.status(404).json({ error: "Nao foi possivel adicionar livro" })
+      res.status(400).json({ error: "Não foi possível adicionar o livro" })
     );
 });
+
+//Atualizar livro
+//PUT api/livros/:id
+router.put("/:id", (req, res) => {
+  Book.findByIdAndUpdate(req.params.id, req.body)
+    .then((book) => res.json({ msg: "Livro atualizado com sucesso" }))
+    .catch((err) =>
+      res
+        .status(404)
+        .json({ error: "Nao foi possivel atualizar a base de dados" })
+    );
+});
+
+//DELETE api/books/:id
+//Deletar livro
+router.put("/:id", (req, res) => {
+  Book.findByIdAndRemove(req.params.id, req.body)
+    .then((book) => res.json({ msg: "Livro deletado com sucesso" }))
+    .catch((err) => res.status(404).json({ error: "Nao existe este livro" }));
+});
+
+module.exports = router;
