@@ -47,7 +47,7 @@ router.put("/:id", (req, res) => {
 
 //DELETE api/books/:id
 //Deletar livro
-router.put("/:id", (req, res) => {
+router.delete("/:id", (req, res) => {
   Book.findByIdAndRemove(req.params.id, req.body)
     .then((book) => res.json({ msg: "Livro deletado com sucesso" }))
     .catch((err) => res.status(404).json({ error: "Nao existe este livro" }));
