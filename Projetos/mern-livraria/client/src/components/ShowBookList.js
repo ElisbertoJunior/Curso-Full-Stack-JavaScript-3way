@@ -9,7 +9,7 @@ function ShowBookList() {
   const [books, setBooks] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:8082/api/books")
+      .get("https://livrariaapi-mern.onrender.com/api/books")
       .then((res) => {
         setBooks(res.data);
       })

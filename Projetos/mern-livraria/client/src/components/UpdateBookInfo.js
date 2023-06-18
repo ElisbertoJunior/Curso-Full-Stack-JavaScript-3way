@@ -19,7 +19,7 @@ function UpdateBookInfo(props) {
   
   useEffect(() => {
     axios
-      .get(`http://localhost:8082/api/books/${id}`)
+      .get(`https://livrariaapi-mern.onrender.com/api/books/${id}`)
       .then((res) => {
         setBook({
           title: res.data.title,

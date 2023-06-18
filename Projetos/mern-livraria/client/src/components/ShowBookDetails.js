@@ -10,7 +10,7 @@ function ShowBookDetails(props) {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get(`http://localhost:8082/api/books/${id}`)
+      .get(`https://livrariaapi-mern.onrender.com/api/books/${id}`)
       .then((res) => {
         setBook(res.data);
       })
@@ -21,7 +21,7 @@ function ShowBookDetails(props) {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`http://localhost:8082/api/books/${id}`)
+      .delete(`https://livrariaapi-mern.onrender.com/api/books/${id}`)
       .then((res) => {
         navigate('/');
       })
